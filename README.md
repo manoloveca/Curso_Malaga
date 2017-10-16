@@ -1,2 +1,2 @@
-# Curso_Malaga
+# Curso Malaga
 Curso Malaga Angular
