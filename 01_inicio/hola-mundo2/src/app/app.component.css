@@ -1,0 +1,25 @@
+header {
+	text-align: center;
+	font-size: 1.8em;
+	color : rgb(128, 102, 61);
+} 
+footer {
+	position: fixed;
+	bottom : 0;
+	width: 100%;
+	border-top: 1px rgb(138, 104, 51) solid;
+	padding: 1em;
+}
+	footer p {
+		text-align: center;
+		font-size: S0.9em;
+		color : rgb(30, 124, 88);
+		margin: 0.5em
+	}
+div {
+	width : 40%;
+	margin : 1em auto
+}
+img {
+	width: 100%
+}

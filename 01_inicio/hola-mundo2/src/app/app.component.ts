@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   curso = 'Angular 4.x';
-  formador = 'Alejandro Cerezo';
-  empresa = 'Icono Training Consulting';
-  title = 'app';
+  formador = 'Alejandro Cerezo Lasne';
+  empresa = 'indra';
+  fecha = '2017';
 }
