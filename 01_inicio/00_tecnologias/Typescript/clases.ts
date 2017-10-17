@@ -8,6 +8,8 @@
         editorial?: string; //propiedades opcionales a traves de la interfaz
         isbn: string | number; //no admito boolean pero si puede ser o como string o como number
         mostrarDatos: Function;
+        calcularPrecio(iva: number): number;
+        
     }
 
     class Libro implements DatosLibro{
@@ -21,6 +23,11 @@
             
         }
         mostrarDatos(){}
+
+        calcularPrecio(iva: number) : number{
+            return 1;
+
+        }
 
         prueba() : void{}
     }
