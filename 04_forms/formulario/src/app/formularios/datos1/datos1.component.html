@@ -15,6 +15,12 @@
       <label for="numpag">Numero Pagina</label>
       <input type="number" id="numpag" name="numpag" [(ngModel)]="oLibro.numpag">
   </p>
+  <p>
+        <input type="checkbox" id="exlibris" name="exlibris" [(ngModel)]="oLibro.exlibris">
+        <label for="exlibris">Disponible</label>
+        
+    </p>
+ 
   <p>Selecciona un genero</p>
     <input type="radio" id="fantastico" name="genero" value = "fantastico" [(ngModel)]="oLibro.genero">
     <label for="fantastico">Fantastico</label>
@@ -25,11 +31,11 @@
     <input type="radio" id="otros" name="genero" value = "otros" [(ngModel)]="oLibro.genero">
     <label for="otros">Otros</label>
 
-  <p>
-      <input type="checkbox" id="exlibris" name="exlibris" [(ngModel)]="oLibro.exlibris">
-      <label for="exlibris">Disponible</label>
-      
-  </p>
+    <p>Pais
+    <select name="pais" id="pais" [(ngModel)]="oLibro.pais">
+        <option *ngFor="let pais of aPaises" [ngValue]="pais">{{pais.nombre}}</option>
+    </select>
+    </p>
   
 </form>
 
