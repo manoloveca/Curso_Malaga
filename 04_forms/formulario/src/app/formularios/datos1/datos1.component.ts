@@ -19,9 +19,16 @@ export class Datos1Component implements OnInit {
     editorial: '',
     exlibris: false,
     numpag: 0,
-    genero: ''
+    genero: '',
+    pais: {codigo: '', nombre: ''}
     };
-    this.aPaises = [];
+
+  
+    this.aPaises = [
+      {codigo: 'SP', nombre: 'España'},
+      {codigo: 'FR', nombre: 'Francia'},
+      {codigo: 'BR', nombre: 'Brasil'}
+    ];
   }
 
   btnInsert() {

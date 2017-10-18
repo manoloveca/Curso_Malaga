@@ -1,3 +1,9 @@
+export interface Pais {
+    codigo: string;
+    nombre: string;
+}
+
+
 export interface Libro {
     autor: string;
     titulo: string;
@@ -5,9 +11,6 @@ export interface Libro {
     exlibris: boolean;
     numpag: number;
     genero: string;
-} 
-
-export interface Pais{
-    codigo: string;
-    nombre: string;
+    pais: Pais;
 }
+
