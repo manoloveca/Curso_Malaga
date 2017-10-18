@@ -7,6 +7,9 @@
     <p>
       Precio: {{precio | currency}}
     </p>
+    <p>
+      Estilos: {{estilo | json}}
+    </p>
 
   <!--  <div [hidden]="aIdeas.length ? false : true"> -->
     <div *ngIf="aIdeas.length">
