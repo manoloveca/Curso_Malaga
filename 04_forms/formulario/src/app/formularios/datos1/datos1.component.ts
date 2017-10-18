@@ -9,11 +9,27 @@ import { Libro, Pais } from '../libro.model';
 export class Datos1Component implements OnInit {
   oLibro: Libro;
   aPaises: Array<Pais>;
+  estaEnviado: boolean;
 
   constructor() { }
 
   ngOnInit() {
-    this.oLibro = {
+    this.btnBorrar();
+
+    this.aPaises = [
+      {codigo: 'SP', nombre: 'España'},
+      {codigo: 'FR', nombre: 'Francia'},
+      {codigo: 'BR', nombre: 'Brasil'}
+    ];
+    this.estaEnviado = false;
+  }
+
+  btnInsert() {
+    this.estaEnviado = true;
+  }
+
+  btnBorrar() {
+   this.oLibro = {
     autor: '',
     titulo: '',
     editorial: '',
@@ -22,16 +38,5 @@ export class Datos1Component implements OnInit {
     genero: '',
     pais: {codigo: '', nombre: ''}
     };
-
-  
-    this.aPaises = [
-      {codigo: 'SP', nombre: 'España'},
-      {codigo: 'FR', nombre: 'Francia'},
-      {codigo: 'BR', nombre: 'Brasil'}
-    ];
   }
-
-  btnInsert() {
-  }
-
 }

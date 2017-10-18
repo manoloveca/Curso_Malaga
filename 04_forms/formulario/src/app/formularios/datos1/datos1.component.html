@@ -1,3 +1,5 @@
+<div class="container" (ngSubmit)='btnInsert()'>
+
 <form>
   <p>
       <label for="autor">Autor</label>
@@ -37,13 +39,13 @@
     </select>
     </p>
   
+    <div *ngIf="estaEnviado">
+            <h2>Resultado</h2>
+            <p>{{oLibro | json}}</p>
+            </div>
 </form>
 
-<h2>Resultado</h2>
-<p>{{oLibro | json}}</p>
-
-<div class="container">
- 
-    <button (click)="btnInsert()">Añadir</button>
+    <button type="submit">Añadir</button>
+    <button type="clear" (click)='btnBorrar()'>Borrar</button>
 
 </div>
