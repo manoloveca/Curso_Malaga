@@ -4,5 +4,5 @@ export interface Libro {
     editorial: string;
     exlibris: boolean;
     numpag: number;
-    generos: Array<string>;
+    genero: string;
 } 

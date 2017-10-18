@@ -18,7 +18,7 @@ export class Datos1Component implements OnInit {
     editorial: '',
     exlibris: false,
     numpag: 0,
-    generos: []
+    genero: ''
     }
   }
 
