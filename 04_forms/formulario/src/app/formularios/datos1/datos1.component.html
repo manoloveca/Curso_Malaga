@@ -1,6 +1,5 @@
-<div class="container" (ngSubmit)='btnInsert()'>
+<form class="container" (ngSubmit)='btnInsert()'>
 
-<form>
   <p>
       <label for="autor">Autor</label>
       <input type="text" id="autor" name="autor" [(ngModel)]="oLibro.autor">
@@ -38,14 +37,13 @@
         <option *ngFor="let pais of aPaises" [ngValue]="pais">{{pais.nombre}}</option>
     </select>
     </p>
-  
+        <button type="submit">Añadir</button>
+        <button type="button" (click)='btnBorrar()'>Borrar</button>
+
+    </form> 
     <div *ngIf="estaEnviado">
             <h2>Resultado</h2>
             <p>{{oLibro | json}}</p>
-            </div>
-</form>
+    </div>
+   
 
-    <button type="submit">Añadir</button>
-    <button type="clear" (click)='btnBorrar()'>Borrar</button>
-
-</div>

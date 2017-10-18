@@ -38,5 +38,6 @@ export class Datos1Component implements OnInit {
     genero: '',
     pais: {codigo: '', nombre: ''}
     };
+    this.estaEnviado = false;
   }
 }
