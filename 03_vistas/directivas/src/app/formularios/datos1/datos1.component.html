@@ -4,6 +4,10 @@
     <input type="text" id="idea" name="name" [(ngModel)]="sIdea">
   </p>
     <button (click)="btnInsert()">Insert</button>
+    <p>
+      Precio: {{precio | currency}}
+    </p>
+
   <!--  <div [hidden]="aIdeas.length ? false : true"> -->
     <div *ngIf="aIdeas.length">
       <h2>Lista de Ideas </h2>

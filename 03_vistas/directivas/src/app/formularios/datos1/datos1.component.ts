@@ -9,6 +9,7 @@ export class Datos1Component implements OnInit {
   sIdea: string;
   aIdeas: Array<string>;
   estilo: {};
+  precio: number;
 
   constructor() { }
 
@@ -16,6 +17,7 @@ export class Datos1Component implements OnInit {
     this.sIdea = '';
     this.aIdeas = [];
     this.estilo = {'color': 'blue', 'font-size': 2};
+    this.precio = 23;
   }
 
   btnInsert() {
