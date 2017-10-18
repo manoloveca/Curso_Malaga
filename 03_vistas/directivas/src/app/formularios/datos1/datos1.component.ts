@@ -8,12 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class Datos1Component implements OnInit {
   sIdea: string;
   aIdeas: Array<string>;
+  estilo: {};
 
   constructor() { }
 
   ngOnInit() {
     this.sIdea = '';
     this.aIdeas = [];
+    this.estilo = {'color': 'blue', 'font-size': 2};
   }
 
   btnInsert() {
