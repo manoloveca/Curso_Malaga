@@ -6,3 +6,8 @@ export interface Libro {
     numpag: number;
     genero: string;
 } 
+
+export interface Pais{
+    codigo: string;
+    nombre: string;
+}

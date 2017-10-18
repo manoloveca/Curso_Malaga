@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Libro } from '../libro.model';
+import { Libro, Pais } from '../libro.model';
 
 @Component({
   selector: 'app-datos1',
@@ -8,6 +8,7 @@ import { Libro } from '../libro.model';
 })
 export class Datos1Component implements OnInit {
   oLibro: Libro;
+  aPaises: Array<Pais>;
 
   constructor() { }
 
@@ -19,7 +20,8 @@ export class Datos1Component implements OnInit {
     exlibris: false,
     numpag: 0,
     genero: ''
-    }
+    };
+    this.aPaises = [];
   }
 
   btnInsert() {
